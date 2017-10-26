@@ -1,8 +1,16 @@
 #include <nan.h>
 #include "objyAccess.h"
 
-void InitAll(v8::Local<v8::Object> exports) {
-	ObjyAccess::Init(exports);
+static void shutdown(void*) {
+  //ooObjy::shutdown();
+  printf("Shutting down!!!!");
 }
 
-NODE_MODULE(addon, InitAll)
+void Init(v8::Local<v8::Object> exports) {
+  
+  ObjyAccess::Init(exports);
+  ooObjy::startup();
+  node::AtExit(shutdown);
+}
+
+NODE_MODULE(addon, Init)
