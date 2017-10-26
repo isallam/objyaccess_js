@@ -4,10 +4,15 @@ This is experimental access point to support query only
 
 You will need node-gyp installed as a global:
 
+```text
 $ sudo npm install node-gyp -g
+```
 
-To build:
+## To build:
+```text
 $ npm install
-
-To run:
+```
+## To run:
+```test
 $ node addon
+```
