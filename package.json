@@ -1,0 +1,20 @@
+{
+  "name": "objydo-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "addon.js",
+  "dependencies": {
+    "nan": "^2.7.0",
+    "node-gyp": "^3.6.2",
+    "bindings": "~1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile": "node-gyp rebuild",
+    "start": "node addon.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ibrahim Sallam",
+  "license": "ISC"
+}

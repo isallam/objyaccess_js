@@ -1,0 +1,14 @@
+/build/
+.deps
+.git
+.objs
+/data/*.boot
+/data/*.fdb
+/data/*.DB
+/data/*.JNL
+/logs/
+/nbproject/
+/node_modules/
+.gradle/
+.nb-gradle/
+
